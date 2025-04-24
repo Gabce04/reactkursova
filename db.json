@@ -23,6 +23,14 @@
       "password": "aloalo",
       "sex": "male",
       "cardType": "monthly"
+    },
+    {
+      "id": "356c",
+      "name": "Elena",
+      "email": "elenapanova@gmail.com",
+      "password": "12345",
+      "sex": "female",
+      "cardType": "weekly"
     }
   ]
 }

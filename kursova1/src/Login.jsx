@@ -65,7 +65,7 @@ const Login = () => {
           required
         />
 
-        <button1 type="submit" className={styles.button1}>Login</button1>
+        <button type="submit" className={styles.button}>Login</button>
       </form>
     </div>
   );
