@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "id": "511b",
+      "name": "Gabriela",
+      "email": "gabrielacapova3@gmail.com",
+      "password": "232",
+      "sex": "male",
+      "cardType": "monthly"
+    },
+    {
+      "id": "eb69",
+      "name": "Gabriela",
+      "email": "gabrielacapova3@gmail.com",
+      "password": "123",
+      "sex": "female",
+      "cardType": "year"
+    }
+  ]
+}
