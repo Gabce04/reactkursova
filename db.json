@@ -15,6 +15,14 @@
       "password": "123",
       "sex": "female",
       "cardType": "year"
+    },
+    {
+      "id": "64df",
+      "name": "Gabriela",
+      "email": "mikenkoskamilena@gmail.com",
+      "password": "aloalo",
+      "sex": "male",
+      "cardType": "monthly"
     }
   ]
 }
