@@ -15,12 +15,17 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Trying to login with:", form);
+    console.log('Trying to login with:', form);
 
     axios
-      .get('http://localhost:3001/users')
+      .get('http://localhost:3001/users') // Make sure your JSON server is running
       .then((response) => {
         const users = response.data;
+        if (!Array.isArray(users)) {
+          setError('Invalid users data.');
+          return;
+        }
+
         const user = users.find(
           (u) => u.email === form.email && u.password === form.password
         );
@@ -29,14 +34,18 @@ const Login = () => {
           console.log('Login successful:', user);
           alert(`Welcome, ${user.name}!`);
           localStorage.setItem('user', JSON.stringify(user));
-          window.location.href = '/profile';
+          window.location.href = '/profile'; // Redirect to profile page
         } else {
-          setError('Invalid credentials. Please register first.');
+          setError('Invalid credentials. Please check your email and password.');
         }
       })
       .catch((err) => {
         console.error('Error during login:', err);
-        setError('Something went wrong. Try again.');
+        if (err.response) {
+          setError(`Server Error: ${err.response.status}`);
+        } else {
+          setError('Something went wrong. Try again.');
+        }
       });
   };
 
@@ -66,7 +75,9 @@ const Login = () => {
           required
         />
 
-        <button type="submit" className={styles.button}>Login</button>
+        <button type="submit" className={styles.button}>
+          Login
+        </button>
       </form>
     </div>
   );

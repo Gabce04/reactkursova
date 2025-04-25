@@ -32,8 +32,10 @@ const Register = () => {
         console.error('Error during registration:', err);
         if (err.response) {
           console.log('Backend response:', err.response.data);
+          setError(err.response.data.message || 'There was an error registering the user.');
+        } else {
+          setError('Network or server error. Please try again.');
         }
-        setError('There was an error registering the user.');
       });
   };
 
