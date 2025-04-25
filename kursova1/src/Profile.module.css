@@ -1,0 +1,25 @@
+.container {
+  position: relative;
+    z-index: 10; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #facc15;
+    padding-top: 5rem; 
+}
+
+.card {
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 16px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(255, 255, 0, 0.3); 
+  background: transparent;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #06143a; 
+}

@@ -31,6 +31,30 @@
       "password": "12345",
       "sex": "female",
       "cardType": "weekly"
+    },
+    {
+      "id": "5db3",
+      "name": "Gabriela",
+      "email": "gabi11@gmail.com",
+      "password": "1233",
+      "sex": "female",
+      "cardType": "weekly"
+    },
+    {
+      "id": "400d",
+      "name": "Andrej",
+      "email": "arsovski123@gmail.com",
+      "password": "1234l",
+      "sex": "male",
+      "cardType": "monthly"
+    },
+    {
+      "id": "6a0c",
+      "name": "Andrej",
+      "email": "aarsovski3@gmail.com",
+      "password": "jasiti",
+      "sex": "male",
+      "cardType": "weekly"
     }
   ]
 }

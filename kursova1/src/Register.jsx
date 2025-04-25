@@ -25,7 +25,8 @@ const Register = () => {
       .then((response) => {
         console.log('User registered successfully:', response.data);
         alert('Registered successfully');
-        window.location.href = '/login';
+        localStorage.setItem('user', JSON.stringify(response.data));
+        window.location.href = '/profile';
       })
       .catch((err) => {
         console.error('Error during registration:', err);

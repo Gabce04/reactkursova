@@ -28,7 +28,8 @@ const Login = () => {
         if (user) {
           console.log('Login successful:', user);
           alert(`Welcome, ${user.name}!`);
-          window.location.href = '/dashboard';
+          localStorage.setItem('user', JSON.stringify(user));
+          window.location.href = '/profile';
         } else {
           setError('Invalid credentials. Please register first.');
         }
